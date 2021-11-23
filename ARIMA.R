@@ -4,7 +4,7 @@ df <- df[c('price',"tradeTime")]
 sum(is.na(df$tradeTime))
 sum(is.na(df$price))
 
-# data prepartion
+# data preparation
 df$tradeTimeTs <- as.Date(df$tradeTime, format = "%Y/%m/%d")
 df$year <- year(df$tradeTimeTs)
 df$month <- month(df$tradeTimeTs)
